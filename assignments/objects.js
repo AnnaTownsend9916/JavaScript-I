@@ -62,7 +62,29 @@ const Antonietta = {
   }
 }
 
+const parent = {
+  name: 'Susan',
+  age: 70,
+  child: {
+    name: 'George',
+    age: 50,
+    grandchild: {
+      name: 'Sam',
+      age: 30
+    }
+  }
+}
 
+function sayHello() {
+  `Hello! My name is ${this.name}`
+};
+
+
+parent.sayHello = sayHello();
+
+child.sayHello = sayHello();
+
+grandchild.sayHello = sayHello();
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
@@ -93,12 +115,12 @@ console.log(Antonietta.multiplyNums(3,4))
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-const parent = {}
+
 
 // Log the parent object's name
-
+console.log(Parent.name)
 // Log the child's age
-
+console.log(grandchild.age)
 // Log the name and age of the grandchild
 
 // Have the parent speak
