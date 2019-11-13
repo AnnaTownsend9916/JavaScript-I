@@ -62,29 +62,7 @@ const Antonietta = {
   }
 }
 
-const parent = {
-  name: 'Susan',
-  age: 70,
-  child: {
-    name: 'George',
-    age: 50,
-    grandchild: {
-      name: 'Sam',
-      age: 30
-    }
-  }
-}
 
-function sayHello() {
-  `Hello! My name is ${this.name}`
-};
-
-
-parent.sayHello = sayHello();
-
-child.sayHello = sayHello();
-
-grandchild.sayHello = sayHello();
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
@@ -117,10 +95,10 @@ console.log(Antonietta.multiplyNums(3,4))
 
 
 
-// Log the parent object's name
-console.log(Parent.name)
-// Log the child's age
-console.log(grandchild.age)
+// // Log the parent object's name
+// console.log(Parent.name)
+// // Log the child's age
+// console.log(grandchild.age)
 // Log the name and age of the grandchild
 
 // Have the parent speak
